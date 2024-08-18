@@ -10,7 +10,7 @@ Here, I'll keep adding the necessary linux terminal commands you need to use wi
 => sudo modprobe i2c_dev
 => sudo openrgb
 
-Use apt for debian based system instead of dnf.
+** Use apt for debian based system instead of dnf. **
 
 => sudo dnf search bengali
 
