@@ -50,57 +50,58 @@ In some cases you may still find broken bengali fonts on Youtube or some other w
 
 ### Arch Linux Based System
 
-<strong> paccache -r </strong>
+=> <strong> paccache -r </strong>
 
 Removes the cache of uninstalled packages
 
-<strong> sudo pacman -Sy </strong>
+=> <strong> sudo pacman -Sy </strong>
 
 Checks for repositories update
 
-<strong> sudo pacman -Syu </strong>
+=> <strong> sudo pacman -Syu </strong>
 
 Full system update command
 
-<strong> sudo pacman -Sc </strong>
+=> <strong> sudo pacman -Sc </strong>
 
 Cleans all system wide and old package cache
 
-<strong> sudo pacman -Rns </strong>
+=> <strong> sudo pacman -Rns </strong>
 
 Removes a package its dependencies and config file backups
 
-<strong> sudo pacman -Qtdq </strong>
+=> <strong> sudo pacman -Qtdq </strong>
 
 Checks and lists all the unused and synced dependencies in the system.
 
-<strong> sudo pacman -Rns <package-name> </strong>
+=> <strong> sudo pacman -Rns <package-name> </strong>
 
 Removes specific package
 
-<strong> sudo pacman -R $(pacman -Qtdq) </strong>
+=> <strong> sudo pacman -R $(pacman -Qtdq) </strong>
 
 Removes all the unused and synced dependencies from the system.
 
-<strong> sudo pacman -Ss <package-name> </strong>
+=> <strong> sudo pacman -Ss <package-name> </strong>
 
 Search for a specific package
 
-<strong> sudo pacman -Qs </strong>
+=> <strong> sudo pacman -Qs </strong>
 
 Search for installed package in the system
 
-<strong> sudo pacman -S pacman-contrib </strong>
+=> <strong> sudo pacman -S pacman-contrib </strong>
 
-<strong> sudo pacman verbose </strong>
+=> <strong> sudo pacman verbose </strong>
 
-# manual install of AUR packages
+### Manual installation of AUR packages
 
-update repositories
+First update the system and all repositories
 
-# pacman -Sy
+=> <strong> sudo pacman -Syu </strong>
 
 grab the package
+
 $ curl -O <url> (e.g. https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz)
 
 untar package
@@ -112,11 +113,12 @@ $ cd <package>
 build and install
 $ makepkg -si
 
-# java environments
+### JAVA Environments
 
 check status
+
 $ archlinux-java status
 
 set default version
 
-# archlinux-java set <version>
+archlinux-java set <version>
