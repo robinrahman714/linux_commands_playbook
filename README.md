@@ -4,6 +4,8 @@ Here, I'll keep adding the necessary linux terminal commands you need to use wi
 
 ## OpenRGB libi2c and i2c Error fix commands
 
+Yeah I know controlling the RGB components in your Linux PC can be pain in the ar\*\* :/ . Because all the motherboard manufacturer are not comfortable with providing their system controlling software in the linux environment. What an ASS choice :) <br> You can install OpenRGB software in your system and control all the components in your system including RAMs, aRGB fans and strips. I have tested below methods/commands in my Asus ROG Strix motherboard. It works fine for my system, which has four RGB RAMs, six 12v RGB and 5v aRGB fans and 12v RGB strips. <br> Like I said I will be keep updating if I counter any kind of problem in the future.
+
 <strong> 
 => sudo usermod -a -G video USER <br>
 => sudo dnf copr enable name/OpenRGB <br>
@@ -48,7 +50,7 @@ After running above command, remove free-sans and free-serif fonts by running be
 
 In some cases you may still find broken bengali fonts on Youtube or some other websites. To fix this, just change the font from the browser settings.
 
-### Arch Linux Based System
+## Arch Linux Based System Commands
 
 => <strong> paccache -r </strong>
 
@@ -60,7 +62,7 @@ Checks for repositories update
 
 => <strong> sudo pacman -Syu </strong>
 
-Full system update command
+Full system update/upgrade command. This command downloads a fresh list for all the installed packages that are out of date. The -y flag forces pacman to download a fresh copy of the package list from the repositories.
 
 => <strong> sudo pacman -Sc </strong>
 
